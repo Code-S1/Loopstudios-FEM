@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.sec {
+    height: 650px;
+    background-image: url("assets/image-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.upper p {
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-family: "Alata", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-family: "Alata", sans-serif;
+    color: white;
+    position: relative;
+    top: 34px;
+    flex-wrap: wrap;
+}
+
+.nav li:hover {
+    text-decoration: underline;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.box-1 {
+    height: fit-content;
+    max-width: 1076px;
+    margin: auto;
+    margin-top: 47px;
+
+}
+
+
+.immersive p {
+    max-width: 620px;
+    height: 266px;
+    border: 2px solid white;
+    margin-top: 100px;
+    color: white;
+    font-family: "Alata", sans-serif;
+    font-size: 60px;
+    word-spacing: 13px;
+    text-align: left;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.vrguy {
+    height: 550px;
+    margin: auto;
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .vrguy {
+        transform: scale(0.7);
+        margin: auto;
+        text-align: center;
+    }
+
+}
+
+
+
+.box-2 {
+
+    width: 595px;
+    font-family: "Alata", sans-serif;
+    background-color: white;
+    padding: 40px 0 0 40px;
+    border: 1px solid black;
+    margin-left: -200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap
+}
+
+
+
+.box-2 h1 {
+    font-size: 60px;
+    font-weight: 100;
+    word-spacing: 18px;
+    letter-spacing: 1px;
+    line-height: 53px;
+}
+
+.box-2 p {
+    color: hsl(0, 0%, 55%);
+    padding: 50px 0 0 0;
+    font-size: large;
+}
+
+
+.creations {
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    width: 90vw;
+    margin: auto;
+    font-family: "Alata", sans-serif;
+    align-items: center;
+    margin-top: 160px;
+    margin-bottom: 100px;
+}
+
+.creations p {
+    font-size: 70px;
+    font-weight: 100;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 871px) {
+    .creations p {
+        font-size: 30px
+    }
+
+
+}
+
+.ide {
+    font-size: small;
+    font-weight: 600;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    border-radius: 2px;
+    padding: 15px 45px;
+    border: 1px solid hsl(0, 0%, 29%);
+    background-color: white;
+}
+
+.creations button:hover {
+    background-color: hsl(0, 0%, 59%);
+    transform: 100ms;
+}
+
+.images {
+    height: auto;
+    max-width: 1350px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.images img {
+    border-radius: 2px
+}
+
+.images img:hover {
+    transform: scale(1.1);
+    transition: 100ms;
+}
+
+footer {
+    height: 200px;
+    width: 100vw;
+    background-color: black;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Alata", sans-serif;
+}
+
+.loop {
+    color: white;
+}
+
+.loop p {
+    font-size: 30px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    line-height: 59px;
+}
+
+.navigation li:hover {
+    text-decoration: underline;
+}
+
+.navigation p {
+    color: hsl(0, 0%, 55%);
+    font-size: small;
+}
+
+.support {
+    height: 144px;
+    width: 303px;
+    display: flex;
+    color: white;
+    line-height: 33px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.support h4 {
+    margin-bottom: 5px;
+}
+
+.suppo li {
+    list-style: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .bottom-button {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+
+    .upper p {
+        margin: auto;
+    }
+
+    .immersive {
+        margin: auto;
+        width: 90%;
+
+    }
+
+    .immersive p {
+        font-size: 50px;
+        height: 210px;
+    }
+
+    .box-2 {
+        border: none;
+        margin: auto;
+        padding-left: inherit;
+        display: flex;
+        height: 400px;
+        flex-wrap: wrap;
+    }
+
+    .box-2 h1 {
+        font-size: 40px;
+        word-spacing: 10px;
+
+    }
+
+    .box-2 p {
+        padding-top: 1px;
+        display: flex;
+        width: 350px;
+        margin: auto;
+        font-size: larger;
+    }
+
+    .vrguy {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .idk {
+        width: 494px;
+        height: 334px;
+        margin: 0 auto 0 auto;
+    }
+
+    .images img {
+        border-radius: 2px;
+        height: 180px;
+        width: 350px;
+        object-fit: cover;
+    }
+
+    .creations button {
+        display: none;
+    }
+
+    .creations p {
+        font-size: 33px;
+    }
+
+    .bottom-button {
+        font-size: small;
+        font-weight: 600;
+        word-spacing: 5px;
+        letter-spacing: 3px;
+        border-radius: 2px;
+        padding: 15px 25px;
+        border: 2px solid hsl(0, 0%, 0%);
+        background-color: white;
+        width: 150px;
+        margin: auto;
+        margin-top: -150px;
+        margin-bottom: 160px;
+    }
+
+    footer {
+        height: 600px;
+        width: 100vw;
+        background-color: black;
+        font-family: "Alata", sans-serif;
+
+    }
+
+    .loop p {
+        text-align: center;
+        margin-bottom: 60px;
+
+    }
+
+    .navigation ul {
+        list-style: none;
+        display: flex;
+        text-align: center;
+        gap: 20px;
+        line-height: 29px;
+        flex-direction: column;
+    }
+
+    .navigation p {
+        margin-top: 40px;
+    }
+
+    .support {
+        display: none;
+    }}
+
+    @media only screen and (max-width: 405px) and (min-width: 370px) {
+        .immersive p {
+            letter-spacing: -3px;
+        }
+
+        .images img {
+            border-radius: 2px;
+            height: 180px;
+            width: 350px;
+            object-fit: cover;
+        }
+    }
